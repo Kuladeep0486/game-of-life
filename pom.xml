@@ -205,20 +205,6 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
-    <distributionManagement>
-		 <snapshotRepository>
-		    <id>nexus</id>
-		    <name>Internal Snapshot Releases</name>	 
-		    <url>http://54.186.243.143:8081/repository/maven-snapshots/</url>
-		 </snapshotRepository>
-		
-		<repository>
-		    <id>nexus</id>
-		    <name>Internal Releases</name>
-		    <url>http://54.186.243.143:8081/repository/maven-releases/</url>
-		</repository>
-  	</distributionManagement>
-
     <modules>
         <module>gameoflife-build</module>
         <module>gameoflife-core</module>
@@ -508,4 +494,18 @@
             </reporting>
         </profile>
     </profiles>
+	    <distributionManagement>
+		 <snapshotRepository>
+		    <id>nexus</id>
+		    <name>Internal Snapshot Releases</name>	 
+		    <url>http://54.186.243.143:8081/repository/maven-snapshots/</url>
+		 </snapshotRepository>
+		
+		<repository>
+		    <id>nexus</id>
+		    <name>Internal Releases</name>
+		    <url>http://54.186.243.143:8081/repository/maven-releases/</url>
+		</repository>
+  	</distributionManagement>
 </project>
+
